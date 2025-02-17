@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hug</title>
+</head>
+<body>
+    <h1>Hug</h1>
+    <p>I love you</p>
+    <p id="counter">You've been hugged for 0 seconds</p>
+    <script>
+        let seconds = 0;
+        setInterval(() => {
+            seconds++;
+            document.getElementById('counter').textContent = 
+                `You've been hugged for ${seconds} seconds`;
+        }, 1000);
+    </script>
+</body>
+</html> 
